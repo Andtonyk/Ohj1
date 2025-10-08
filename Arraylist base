@@ -1,0 +1,9 @@
+
+Listauksen toteuttaminen ohjelmallisesti, jos kyseessä esimerkkitehtäviemme mukainen rakenne, eli kysytyn tiedon asettaminen listaan, jota voidaan käydä läpi.
+
+public class nimi {
+
+private ArrayList<muodostettavalista> listan_nimi = new ArrayList<muodostettavalista>(); -> tähän muodostetaan se lista, johon tietoa syötetään.
+
+public static void main(String[] args)
+}
