@@ -1,0 +1,7 @@
+Desimaalin tekemiseen tarvitaan vain alla oleva koodi
+
+DecimalFormat des = new DecimalFormat("0.00");
+
+Se lisätään muokattavaan arvoon des.format(arvo_joka_halutaan_desimalisoida)
+
+Sillä voidaan muodostaa desimaalit myös olioista tulevalle datalle des.format(asunto.getPintala())
