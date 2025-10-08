@@ -1,0 +1,92 @@
+#h1 Luokka ja oliot huomioita
+
+Muista käyttää eclipsen Source-välilehden alla olevia Generate Constructors -> Generate Getters/Setters ja ToString komentoja, helpottaaksesi prosessia.
+
+Muista että niitä varten osaksi tarvitaan kuitenkin Atribuutit sekä niiden mukaiset konstruktorit.
+Esimerkit Auto-luokasta
+
+public class Auto {
+	// Atribuutie (j�senmuuttujat)
+	private String merkki;
+	private String rekisteriNro;
+	private int vuosimalli;
+	private int nopeus;
+
+	// Konstruktori, jolla tehd��n "tyhj�" olio
+	public Auto() {
+		merkki = "";
+		rekisteriNro = "";
+		vuosimalli = 0;
+		nopeus = 0;
+	}
+
+
+Esimerkki consructoreista Auto-ohjelmassa
+
+	public Auto(String merkki, String rekisteriNro, int vuosimalli, int nopeus) {
+		this.merkki = merkki;
+		this.rekisteriNro = rekisteriNro;
+		this.vuosimalli = vuosimalli;
+		this.nopeus = nopeus;
+	}
+
+Esimerkki gettereistä ja settereistä Auto-ohjelmassa
+
+	public String getMerkki() {
+		return merkki;
+	}
+
+	public void setMerkki(String merkki) {
+		this.merkki = merkki;
+	}
+
+	public String getRekisteriNro() {
+		return rekisteriNro;
+	}
+
+	public void setRekisteriNro(String rekisteriNro) {
+		this.rekisteriNro = rekisteriNro;
+	}
+
+	public int getVuosimalli() {
+		return vuosimalli;
+	}
+
+	public void setVuosimalli(int vuosimalli) {
+		this.vuosimalli = vuosimalli;
+	}
+
+	public int getNopeus() {
+		return nopeus;
+	}
+
+	public void setNopeus(int nopeus) {
+		this.nopeus = nopeus;
+	}
+
+	public void kaasuta(int lisays) {
+		nopeus = nopeus + lisays;
+	}
+
+	public void jarruta(int vahennys) {
+		nopeus = nopeus - vahennys;
+		if (nopeus < 0) {
+			nopeus = 0;
+		}
+	}
+
+	public int getIka() {
+		int tamaVuosi = LocalDate.now().getYear();
+		int ika = tamaVuosi - vuosimalli;
+
+		return ika;
+	}
+
+Esimerkki toStringistä Auto-ohjelmassa
+
+	public String toString() {
+		return "Auto [merkki=" + merkki + ", rekisteriNro=" + rekisteriNro + ", vuosimalli=" + vuosimalli + ", nopeus="
+				+ nopeus + "]";
+	}
+
+}
