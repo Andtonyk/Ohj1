@@ -1,6 +1,36 @@
 
 
-Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 
-System.out.print(": ");
-String tahan_haluttu_nimi = input.nextLine();
+String Scanner
+
+		System.out.print(": ");
+		String tahan_haluttu_nimi = input.nextLine();
+
+Int Scanner
+
+		System.out.print(": ");
+		int tahan_haluttu_nimi = input.nextInt();
+
+Double Scanner
+
+		System.out.print(": ");
+		double tahan_haluttu_nimi = input.nextDouble();
+
+HUOM!
+
+Jos tarvitaan järjestyksen takia scannereita, joissa kysytään numeerista tietoa ja sitten tekstiä, käytä alla olevaa komentoa tyhjän rivivaihdon poislukemiseen.
+
+input.nextLine();
+
+Esimerkiksi
+
+		System.out.print("Anna hinta: ");
+		double hinta = input.nextDouble();
+		asunto.setHinta(hinta);
+		
+		input.nextLine();
+		
+		System.out.print("Anna kuvaus: ");
+		String kuvaus = input.nextLine();
+		asunto.setKuvaus(kuvaus);
