@@ -1,0 +1,31 @@
+Jos haluttaisiin tai tarvittaisiin numeeriseen valikoimiseen rakennettuja toimintoja, voitaisiin siinä käyttää alla olevaa tapaa käsitellä saatuja painalluksia
+
+		int valinta;
+		Scanner input = new Scanner(System.in);
+
+		do {
+			System.out.println("\n1. jotain tapahtuu");
+			System.out.println("2. jotain tapahtuu");
+			System.out.println("3. jotain tapahtuu");
+			System.out.println("0. Lopetus");
+			System.out.print("Anna valintasi (0-3): "); -> Muista ilmoittaa vaihtoehtojen skaala, jotta virheilmoituksen välittäminen on mahdollista, jos annetaan ei löytyvä arvo.
+			valinta = input.nextInt();
+
+			switch (valinta) {
+			case 1:
+				ohjelma.lisaaAuto();
+				break;
+			case 2:
+				ohjelma.naytaAutot();
+				break;
+			case 3:
+				ohjelma.lisaaNopeutta();
+				break;
+			case 0:
+				break;
+			default:
+				System.out.println("Virheellinen valinta");
+			}
+		} while (valinta != 0);
+		 
+	}
