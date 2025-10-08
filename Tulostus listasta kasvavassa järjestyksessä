@@ -1,0 +1,5 @@
+		Arrays.sort(listannimi, 0, lkm);
+		
+		System.out.print("\listaukset ovat ");
+		for (int i = 0; i < lkm; i++) {
+			System.out.print(listannimi[i]+ " ");
