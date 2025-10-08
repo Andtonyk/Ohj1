@@ -1,0 +1,23 @@
+Tärkeää huomioida mitä kyseisen valinann komentokentässä tapahtuu, esimerkiksi "lisaaAsia"
+
+Tällöin kyseisen kohdan tulisi lisätä haluttua tietue, joka on toteutettu vastaavassa kentässä.
+
+public void lisaaAsia() {
+		Scanner input = new Scanner(System.in);
+
+		System.out.print("Annax: ");
+		String x = input.nextLine();
+
+		System.out.print("Anna x: ");
+		double x = input.nextLine();
+
+		System.out.print("Anna x: ");
+		int x = input.nextInt();
+}
+
+Yleensä kyseinen lisääminen toteutetaan luokan mainissa, vaikka se viittaisikin sen ulkopuolisiin kenttiin.
+
+		AsiaOhjelma ohjelma = new AsiaOhjelma();
+
+		ohjelma.lisaaAsia();
+		ohjelma.naytaAsia();
